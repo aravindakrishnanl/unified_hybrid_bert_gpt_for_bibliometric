@@ -5,10 +5,9 @@ import requests
 API_KEY = 'ZLQojgG1uJDYRdprWS8UhEzsIPM03cNi'  # <-- Replace with your CORE API key
 CORE_API_ENDPOINT = "https://api.core.ac.uk/v3/search/works"
 
-# ========== Initialize KeyBERT ==========
+
 kw_model = KeyBERT()
 
-# ========== Academic Synonym Mapping ==========
 def refine_keywords(keywords):
     replacements = {
         "ai": "artificial intelligence",
